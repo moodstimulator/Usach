@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TON Token Holders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Top Holders of TON Token</h1>
+
+    <div class="chart-container">
+        <canvas id="priceChart" width="800" height="400"></canvas>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Address</th>
+                    <th>Balance</th>
+                    <th>Percentage</th>
+                    <th>Value (USD)</th>
+                </tr>
+            </thead>
+            <tbody id="holdersTable">
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="loading" id="loading">Loading data...</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
